@@ -1,0 +1,33 @@
+bg = 0;
+samo=0
+def setup():
+    global samo
+    size(1000,1000)
+    samo=loadImage("samo.jpg")
+    
+    background(255)
+def draw():
+    global samo
+    global bg
+    image(samo,300,100, 450,650) 
+    if mousePressed==True:
+       line (mouseX,mouseY,pmouseX,pmouseY) 
+    fill(255)
+    # левый верхний угол 250 150, размеры 100 на 50
+    rect(250,30,100,50) # x от 250 до 250+100, y от 150 до 150 + 50  
+    fill(255,0,0)
+    rect(350,30,40,60)
+    fill(0)
+    rect(400,30,90,90)#black
+    fill(12,7,216)
+    rect(490,30,120,100)
+    
+    fill(155,0,0)
+    textSize(20)
+   
+    rect(560,30,150,120)
+    fill(200,0,0)
+    rect(720,30,150,140)
+    fill(0)
+    text(u"больше",560+100/2,30+120/2)
+   
